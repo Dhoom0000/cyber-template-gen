@@ -1,0 +1,45 @@
+# Base files
+files= [
+    ".gitignore", # Git Files
+    "diagram.drawio",
+    "Makefile.toml",
+    "note.md",
+    "README.md",
+    ]
+
+# Assets folder to store images, captures and logs
+[assets]
+files = ["inventory.csv", "timeline.csv"]
+
+[assets.captures]
+[assets.images]
+[assets.logs]
+
+# Configuration files
+[config]
+files = [".env.example"]
+
+[config.tooling]
+files = ["burp-config.xml", "metasploit.rc"]
+
+# Evidence and hash values
+[evidence]
+files = ["hashlist.txt"]
+
+# Results and findings
+[results]
+files = ["findings.csv"]
+
+[results.scans]
+files = ["nmap.xml", "scan-summary.csv"]
+
+# Scripts
+[scripts.bin]
+files = ["rust-script.rs", "script.py", "Cargo.toml", "requirements.txt"]
+
+[scripts.shell]
+files = ["shellscript.sh", "script.bat"]
+
+# Reporting
+[reporting]
+files = ["report.typ", "references.md"]
